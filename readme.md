@@ -4,7 +4,6 @@ A note-taking app with storage and realtime sync
 ## Built With
 * JavaScript
   * Meteor
-    * react-meteor-data
   * React
 * MongoDB
 
