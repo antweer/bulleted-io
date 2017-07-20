@@ -2,8 +2,10 @@
 A note-taking app with storage and realtime sync 
 
 ## Built With
-* Meteor
-* React
+* JavaScript
+  * Meteor
+    * react-meteor-data
+  * React
 * MongoDB
 
 ## Documentation
@@ -14,7 +16,16 @@ A note-taking app with storage and realtime sync
 * Sorted by date
 * Realtime Sync
 * Account Creation
+* Storage through MongoDB
+* SSL Encryption through Heroku Deployment
 
-## Stretch Goals
+## Coming Soon
 * End to End Encryption
+* Infinitely nested bullets
 * Themes
+* Account confirmation
+* Password reset/change
+
+## Testing
+* Tested with Mocha, ExpectJS, and airbnb/enzyme
+<img src="/public/images/test.png" height="500px">
