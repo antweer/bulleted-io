@@ -1,16 +1,18 @@
 # Bulleted.io
-A notetaking app that allows infinitely nested bullets and syncs with Google Drive
+A notetaking app with storage and realtime sync 
 
 ## Built With
+* Meteor
+* React
+* MongoDB
 
 ## Documentation
+<img src="/public/images/home.png">
 
-## MVP Goals
-* Google Auth for login
-* Drive REST API for saving notes
-* Infinitely nested bullet capabilities
-* SSL Encryption
-* Sort by Date/Calendar
+## Features
+* Sorts by last updated
+* Realtime Sync
+* 
 
 ## Stretch Goals
 * End to End Encryption
