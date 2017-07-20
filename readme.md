@@ -10,21 +10,28 @@ A note-taking app with storage and realtime sync
 ## Documentation
 <img src="/public/images/home.png" height="500px">
 
+[Click here to visit app](https://bulleted.herokuapp.com/)
+
+Log in or Create an account 
+
+Take notes until your brain explodes!
 
 ## Features
-* Sorted by date
-* Realtime Sync
-* Account Creation
-* Storage through MongoDB
-* SSL Encryption through Heroku Deployment
+* Single Page Application via React-Router
+* Account creation
+* Sorting by date
+* Realtime Sync with Sockets
+* NoSQL type storage via MongoDB
+* SSL Encryption via Heroku Deployment
 
 ## Coming Soon
 * End to End Encryption
 * Infinitely nested bullets
-* Themes
 * Account confirmation
 * Password reset/change
+* Themes
+* Sort by drag and drop
 
 ## Testing
-* Tested with Mocha, ExpectJS, and airbnb/enzyme
+* Tested with Mocha, ExpectJS, airbnb/enzyme, and React addon test utils
 <img src="/public/images/test.png" height="500px">
