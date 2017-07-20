@@ -1,5 +1,5 @@
 # [Bulleted.io](https://bulleted.herokuapp.com/)
-A notetaking app with storage and realtime sync 
+A note-taking app with storage and realtime sync 
 
 ## Built With
 * Meteor
@@ -7,7 +7,7 @@ A notetaking app with storage and realtime sync
 * MongoDB
 
 ## Documentation
-<img src="/public/images/home.png">
+<img src="/public/images/home.png" height="500px">
 
 
 ## Features
