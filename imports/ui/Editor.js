@@ -41,7 +41,7 @@ export class Editor extends React.Component {
   
   deleteNote() {
     this.props.call('notes.remove', this.props.note._id);
-    this.props.browserHistory.push('/');
+    this.props.browserHistory.push('/dashboard');
   }
   
   render() {
