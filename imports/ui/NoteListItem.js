@@ -16,7 +16,7 @@ export const NoteListItem = (props) => {
 
 NoteListItem.propTypes = {
   note: React.PropTypes.object.isRequired,
-  session: React.PropTypes.object.isRequired
+  Session: React.PropTypes.object.isRequired
 };
 
 export default createContainer(() => {
