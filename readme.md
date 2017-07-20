@@ -1,5 +1,5 @@
 # Bulleted.io
-A notetaking app that allows infinitely nested bullets and syncs with Google Drive
+A notetaking app with storage and realtime sync 
 
 ## Built With
 
