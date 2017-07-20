@@ -1,4 +1,4 @@
-# Bulleted.io
+# [Bulleted.io](https://bulleted.herokuapp.com/)
 A notetaking app with storage and realtime sync 
 
 ## Built With
@@ -8,6 +8,7 @@ A notetaking app with storage and realtime sync
 
 ## Documentation
 <img src="/public/images/home.png">
+
 
 ## Features
 * Sorted by date
