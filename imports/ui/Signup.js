@@ -58,4 +58,3 @@ export default createContainer(() => {
     createUser: Accounts.createUser
   };
 }, Signup);
-

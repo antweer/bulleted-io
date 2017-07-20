@@ -14,36 +14,31 @@ export class Editor extends React.Component {
       body: ''
     };
   }
-  
-  handleBodyChange(event) {
-    const body = event.target.value;
-    this.setState({ body })
+  handleBodyChange(e) {
+    const body = e.target.value;
+    this.setState({ body });
     this.props.call('notes.update', this.props.note._id, { body });
   }
-  
-  handleTitleChange(event) {
-    const title = event.target.value;
-    this.setState({ title })
+  handleTitleChange(e) {
+    const title = e.target.value;
+    this.setState({ title });
     this.props.call('notes.update', this.props.note._id, { title });
   }
-  
+  handleRemoval(){
+    this.props.call('notes.remove', this.props.note._id);
+    this.props.browserHistory.push('/dashboard');
+  }
   componentDidUpdate(prevProps, prevState) {
     const currentNoteId = this.props.note ? this.props.note._id : undefined;
     const prevNoteId = prevProps.note ? prevProps.note._id : undefined;
-    
-    if (currentNoteId && currentNoteId != prevNoteId) {
+
+    if (currentNoteId && currentNoteId !== prevNoteId) {
       this.setState({
         title: this.props.note.title,
         body: this.props.note.body
       });
     }
   }
-  
-  deleteNote() {
-    this.props.call('notes.remove', this.props.note._id);
-    this.props.browserHistory.push('/dashboard');
-  }
-  
   render() {
     if (this.props.note) {
       return (
@@ -76,9 +71,9 @@ Editor.propTypes = {
 
 export default createContainer(() => {
   const selectedNoteId = Session.get('selectedNoteId');
-  
+
   return {
-    selectedNoteId: selectedNoteId,
+    selectedNoteId,
     note: Notes.findOne(selectedNoteId),
     call: Meteor.call,
     browserHistory

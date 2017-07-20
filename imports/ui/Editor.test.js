@@ -20,12 +20,12 @@ if (Meteor.isClient) {
 
     it('should render pick note mesesage', function () {
       const wrapper = mount(<Editor browserHistory={browserHistory} call={call}/>);
-      expect(wrapper.find('p').text()).toBe('Pick or create a note to get started');
+      expect(wrapper.find('p').text()).toBe('Pick or create a note to get started.');
     });
 
     it('should render not found message', function () {
       const wrapper = mount(<Editor browserHistory={browserHistory} call={call} selectedNoteId={notes[0]._id}/>);
-      expect(wrapper.find('p').text()).toBe('Note not found');
+      expect(wrapper.find('p').text()).toBe('Note not found.');
     });
 
     it('should remove note', function () {

@@ -10,13 +10,12 @@ import NoteListEmptyItem from './NoteListEmptyItem';
 
 export const NoteList = (props) => {
   return (
-    <div>
-      <NoteListHeader />
-      { props.notes.length === 0 ? <NoteListEmptyItem /> : undefined }
+    <div className="item-list">
+      <NoteListHeader/>
+      { props.notes.length === 0 ? <NoteListEmptyItem/> : undefined }
       {props.notes.map((note) => {
-        return <NoteListItem key={note._id} note={note} />
+        return <NoteListItem key={note._id} note={note}/>;
       })}
-      NoteList { props.notes.length }
     </div>
   );
 };
@@ -27,9 +26,9 @@ NoteList.propTypes = {
 
 export default createContainer(() => {
   const selectedNoteId = Session.get('selectedNoteId');
-  
+
   Meteor.subscribe('notes');
-  
+
   return {
     notes: Notes.find({}, {
       sort: {
@@ -43,4 +42,3 @@ export default createContainer(() => {
     })
   };
 }, NoteList);
-
