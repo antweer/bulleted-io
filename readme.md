@@ -10,9 +10,9 @@ A notetaking app with storage and realtime sync
 <img src="/public/images/home.png">
 
 ## Features
-* Sorts by last updated
+* Sorted by date
 * Realtime Sync
-* 
+* Account Creation
 
 ## Stretch Goals
 * End to End Encryption
