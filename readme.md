@@ -25,12 +25,15 @@ Take notes until your brain explodes!
 * SSL Encryption via Heroku Deployment
 
 ## Coming Soon
-* End to End Encryption
 * Infinitely nested bullets
+* Sort by drag and drop
 * Account confirmation
 * Password reset/change
+* End to End Encryption
+* Desktop version via electron
+* iOS/Android version via React-Native
 * Themes
-* Sort by drag and drop
+
 
 ## Testing
 * Tested with Mocha, ExpectJS, airbnb/enzyme, and React addon test utils
