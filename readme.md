@@ -7,6 +7,7 @@ A notetaking app with storage and realtime sync
 * MongoDB
 
 ## Documentation
+<img src="/public/images/home.png">
 
 ## Features
 * Sorts by last updated
